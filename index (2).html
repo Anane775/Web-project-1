@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anex Tours</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    /* HEADER */
+    header{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.5),)
+      url(Anextour.jpg);
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    header h1{
+      font-size:4rem;
+      margin-bottom:20px;
+    }
+
+    header p{
+      max-width:700px;
+      margin:auto;
+      font-size:1.2rem;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 35px;
+      background:#ffb703;
+      color:#111;
+      text-decoration:none;
+      border-radius:5px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ffaa00;
+    }
+
+    /* NAVBAR */
+    nav{
+      background:#111;
+      position:sticky;
+      top:0;
+      z-index:999;
+    }
+
+    nav ul{
+      display:flex;
+      justify-content:center;
+      list-style:none;
+      flex-wrap:wrap;
+    }
+
+    nav ul li{
+      margin:15px 20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffb703;
+    }
+
+    /* SECTION */
+    section{
+      padding:70px 10%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:2.7rem;
+      color:#222;
+    }
+
+    /* DESTINATIONS */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:230px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      margin-bottom:12px;
+      color:#111;
+    }
+
+    /* ABOUT */
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:12px;
+    }
+
+    .about-text h2{
+      margin-bottom:20px;
+      font-size:2.2rem;
+    }
+
+    /* GALLERY */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+    /* TESTIMONIALS */
+    .testimonials{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .testimonial{
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .testimonial h4{
+      margin-top:15px;
+      color:#ff9800;
+    }
+
+    /* CONTACT */
+    .contact{
+      background:#fff8e7;
+      color:black;
+      text-align:center;
+      padding:70px 20px;
+    }
+
+    .contact p{
+      margin:20px 0;
+      font-size:18px;
+    }
+
+    footer{
+      background:#fff8e7;
+      color:# black;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.5rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div>
+      <h1>Anex Tours</h1>
+      <p>
+        Experience unforgettable journeys around the world with luxury travel,
+        adventure tours, beautiful beaches, and exciting city experiences.
+      </p>
+
+      <a href="#destinations" class="btn">Explore Tours</a>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations">
+    <h2 class="title">Popular Destinations</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="paris.jpg" alt="anextour">
+        <div class="card-content">
+          <h3>Paris, France</h3>
+          <p>
+            Discover romantic streets, luxury shopping, cafes, and the Eiffel Tower.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="dubai.jpg" alt="Dubai">
+        <div class="card-content">
+          <h3>Dubai, UAE</h3>
+          <p>
+            Explore futuristic skyscrapers, deserts, luxury hotels, and shopping malls.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="maldives.jpg" alt="Maldives">
+        <div class="card-content">
+          <h3>Maldives</h3>
+          <p>
+            Relax on tropical beaches with crystal-clear water and luxury resorts.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+
+<img src="about.jpg" alt="Travel">
+
+      <div class="about-text">
+        <h2>About Anex Tours</h2>
+
+        <p>
+          <p>
+Anex Tour is an international travel company that was founded in 1996 in Antalya, Turkey. The company is part of the Anex Tourism Group and has become one of the leading tour operators in the tourism industry. Anex Tour offers affordable holiday packages while maintaining high-quality services for travelers around the world.
+</p>
+</br>
+         <p> Anex Tours provides premium travel experiences for tourists around the world.
+          We organize luxury vacations, adventure trips, family holidays, and cultural tours.
+        </p>
+
+        <br>
+
+        <p>
+          Our professional guides and travel experts ensure comfort, safety,
+          and unforgettable memories during every trip.
+        </p>
+
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2 class="title">Travel Gallery</h2>
+
+    <div class="gallery">
+
+      <img src="anex.jpg" alt="">
+      <img src="anex2.jpg" alt="">
+      <img src="anex3.jpg" alt="">
+      <img src="anex4.jpg" alt="">
+      <img src="anex5.jpg" alt="">
+      <img src="anex6.jpg" alt="">
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="reviews">
+    <h2 class="title">Customer Reviews</h2>
+
+    <div class="testimonials">
+
+      <div class="testimonial">
+        <p>
+          “Amazing experience! The hotels and tour guides were excellent.
+          I enjoyed every moment of the trip.”
+        </p>
+        <h4>- Sarah Johnson</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>
+          “Professional service and unforgettable destinations.
+          Highly recommended for family vacations.”
+        </p>
+        <h4>- Michael Lee</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>
+          “The Maldives package was incredible. Beautiful beaches and luxury resorts.”
+        </p>
+        <h4>- Emily Davis</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+
+    <h2>Book Your Dream Vacation</h2>
+    <section class="booking-section">
+    <h2>Book Your Dream Trip</h2>
+
+    <p>Email: info@anextours.com</p>
+    <p>Phone: +1 800 123 4567</p>
+    <p>Location: International Travel Center</p>
+
+    <a href="#" class="btn">Book Now</a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Anex Tours. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>"
